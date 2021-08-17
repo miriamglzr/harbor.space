@@ -1,16 +1,15 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Layout from './Layout';
+import Home from './Home';
 
 function App () {
   return (
     <Router className="App">
       <Layout />
       <Switch>
-        {/* <Route exact path="/" component={Home} /> */}
-        {/* <Route exact path="/resume" component={Story} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact" component={Contact} /> */}
+        <Route exact path="/" component={Home} />
+
       </Switch>
     </Router>
   );

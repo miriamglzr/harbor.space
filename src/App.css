@@ -3,38 +3,47 @@
 
 .App {
   text-align: center;
-  font-family: "Apercu Pro"
+  font-family: Apercu Pro;
+  color: #535353;
+}
+.font {
+  font-family: Apercu Pro;
+  color: #535353;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-brand{
+  color: white !important;
+  font-size: 18px
 }
-
-.App-link {
-  color: #61dafb;
+.harbor-space {
+left: 5%;
+right: 5%;
+top: 18.91%;
+bottom: 23.27%;
+height: 26px;
+margin-right: 10px;
+margin-left: 5%;
 }
-
-
 
 .bg{
+  font-family: Apercu Pro;
   background-color: #685DC5 ;
   display: flex;
   color:  white;
-  padding: 20px
+  padding: 20px;
+  height: 110px;
 }
 
 .apply-button{
-  min-height: 100px;
-  min-width: 100px;
+  position:absolute;
+  top: 35px;
+  left: 80%;
+  min-height: 140px;
+  min-width: 140px;
   border-radius: 50%;
   font-weight: 600;
+  font-size: 20px !important;
+  letter-spacing: -0.28px;
   color: white;
   background-color: #4fa16c;
   border: none;
@@ -42,11 +51,278 @@
   text-decoration: none;
   font-size: 15px;
   padding: 10px;
-text-transform: none !important;
-        transition: all 0.3s ease 0s;
+  text-transform: none !important;
+        transition: all 0.2s ease 0s;
 }
 
 .apply-button:hover {
   transform: scale(1.1);
   text-transform: none !important;
+}
+
+.apply-format{
+  margin: 0;
+}
+
+.title-font {
+font-family: Apercu Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 56px;
+
+letter-spacing: -0.6px;
+
+color: #685DC5;
+}
+
+.title-design{
+  position: absolute;
+height: 96px;
+left: 13.89%;
+right: 55.56%;
+top: 261px;
+}
+
+.subtitle{
+  font-family: Apercu Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+margin: 0;
+  letter-spacing: -0.16px;
+
+  color: #685DC5;
+}
+.bold-text{
+  position: absolute;
+height: 64px;
+left: 13.96%;
+right: 55.49%;
+top: 405px;
+
+font-family: Apercu Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+/* or 145% */
+
+letter-spacing: -0.33px;
+
+color: #535353;
+}
+
+.normal-text{
+  font-family: Apercu Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+  /* or 145% */
+  text-align: justify;
+  text-justify: inter-word;
+
+  letter-spacing: -0.33px;
+
+  color: #535353;
+}
+
+.design-logo{
+position: absolute;
+height: 206px;
+left: 34.2%;
+right: 51.5%;
+top: 162.98px;
+}
+
+.zeptolab-logo{
+position: absolute;
+height: 80px;
+left: 55.56%;
+right: 38.89%;
+top: 261px;
+}
+
+.quad {
+  position: absolute;
+width: 560px;
+height: 257px;
+left: 60.56%;
+top: 613px;
+
+}
+
+.button-format {
+height: 58px;
+width: 166px;
+left: 0px;
+top: 0px;
+border-radius: 29px;
+background-color: #685DC5 ;
+border-radius: 29px;
+border: none;
+color: white;
+
+font-family: Apercu Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+text-align: center;
+letter-spacing: -0.18px;
+cursor: pointer;
+transition: all 0.2s ease 0s;
+}
+
+.button-format:hover {
+  background-color: #534fb8;
+}
+
+
+
+/* boxes */
+.box1 {
+  position: absolute;
+width: 480px;
+height: 116px;
+left: 55.56%;
+top: 368px;
+
+background: #FFFFFF;
+border: 1px solid #DADADA;
+box-sizing: border-box;
+border-radius: 4px;
+padding: 20px 0px 0px 50px;
+}
+
+.box2 {
+  position: absolute;
+width: 480px;
+height: 200px;
+left: 55.56%;
+top: 514px;
+
+background: #FFFFFF;
+border: 1px solid #DADADA;
+box-sizing: border-box;
+border-radius: 4px;
+padding: 40px 0px 30px 50px;
+}
+
+
+
+/* positions */
+.p1{
+  position: absolute;
+  height: 64px;
+  left: 13.96%;
+  right: 55.49%;
+  top: 405px;
+}
+.p2{
+position: absolute;
+height: 160px;
+left: 13.89%;
+right: 55.56%;
+top: 509px;
+}
+
+.p3{
+position: absolute;
+height: 33px;
+left: 14.03%;
+right: 55.56%;
+top: 709px;
+}
+
+.p4{
+  position: absolute;
+  left: 13.89%;
+  right: 55.56%;
+top: 809px;
+}
+
+.p5{
+  position: absolute;
+height: 24px;
+left: 63.89%;
+right: 27.78%;
+top: 269px;
+
+font-family: Apercu Pro;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 24px;
+color: #535353
+}
+
+.p6 {
+  position: absolute;
+height: 24px;
+left: 63.96%;
+right: 19.44%;
+top: 303px;
+
+font-family: Apercu Pro;
+font-style: normal;
+font-weight: 300;
+font-size: 27px;
+line-height: 24px;
+
+letter-spacing: -0.27px;
+color: #535353
+}
+
+.p7{
+
+  height: 24px;
+  left: 0%;
+  right: 61.84%;
+  top: calc(50% - 24px/2 - 19.5px);
+}
+.p8{
+ margin-top:15px;
+height: 24px;
+left: 0%;
+right: 1.84%;
+top: calc(50% - 24px/2 + 20.5px);
+font-style:normal;
+font-weight: lighter !important;
+font-size: 27px;
+line-height: 24px;
+}
+
+.p9{
+height: 49px;
+right: 82.03%;
+top: calc(50% - 49px/2 - 35.5px);
+}
+
+.p10{
+position: absolute;
+height: 73px;
+left: 69.57%;
+right: -0.29%;
+top: calc(50% - 73px/2 - 23.5px);
+}
+
+.p11{
+
+height: 49px;
+left: 0%;
+right: 58.26%;
+top: calc(50% - 49px/2 + 36.5px);
+}
+
+.p12{
+  position: absolute;
+height: 49px;
+left: 69.57%;
+right: -2.9%;
+top: calc(50% - 49px/2 + 36.5px);
 }
