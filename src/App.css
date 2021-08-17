@@ -1,16 +1,9 @@
+@import url(//db.onlinewebfonts.com/c/74c3c29282b604a9eed88ac6ede61463?family=Apercu+Pro);
+@font-face {font-family: "Apercu Pro"; src: url("//db.onlinewebfonts.com/t/74c3c29282b604a9eed88ac6ede61463.eot"); src: url("//db.onlinewebfonts.com/t/74c3c29282b604a9eed88ac6ede61463.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/74c3c29282b604a9eed88ac6ede61463.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/74c3c29282b604a9eed88ac6ede61463.woff") format("woff"), url("//db.onlinewebfonts.com/t/74c3c29282b604a9eed88ac6ede61463.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/74c3c29282b604a9eed88ac6ede61463.svg#Apercu Pro") format("svg"); }
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: "Apercu Pro"
 }
 
 .App-header {
@@ -28,11 +21,32 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.bg{
+  background-color: #685DC5 ;
+  display: flex;
+  color:  white;
+  padding: 20px
+}
+
+.apply-button{
+  min-height: 100px;
+  min-width: 100px;
+  border-radius: 50%;
+  font-weight: 600;
+  color: white;
+  background-color: #4fa16c;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+text-transform: none !important;
+        transition: all 0.3s ease 0s;
+}
+
+.apply-button:hover {
+  transform: scale(1.1);
+  text-transform: none !important;
 }
