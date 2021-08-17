@@ -76,13 +76,7 @@ letter-spacing: -0.6px;
 color: #685DC5;
 }
 
-.title-design{
-  position: absolute;
-height: 96px;
-left: 13.89%;
-right: 55.56%;
-top: 261px;
-}
+
 
 .subtitle{
   font-family: Apercu Pro;
@@ -154,6 +148,23 @@ top: 613px;
 
 }
 
+.student-bg {
+  position: absolute;
+  width: 438px;
+  height: 438px;
+  left: 203px;
+  top: 1030px;
+  }
+
+.student-img {
+  position: absolute;
+width: 380px;
+height: 380px;
+left: 231px;
+top: 1059px;
+border-radius: 50%;
+}
+
 .button-format {
 height: 58px;
 width: 166px;
@@ -182,6 +193,19 @@ transition: all 0.2s ease 0s;
   background-color: #534fb8;
 }
 
+.tuition{
+  margin-top: 30px;
+  font-family: Apercu Pro;
+font-style: normal;
+font-weight: 300;
+font-size: 48px;
+line-height: 24px;
+/* or 50% */
+
+display: flex;
+align-items: center;
+letter-spacing: -0.436364px;
+}
 
 
 /* boxes */
@@ -213,116 +237,56 @@ border-radius: 4px;
 padding: 40px 0px 30px 50px;
 }
 
-
-
-/* positions */
-.p1{
+.box3{
   position: absolute;
-  height: 64px;
-  left: 13.96%;
-  right: 55.49%;
-  top: 405px;
-}
-.p2{
-position: absolute;
-height: 160px;
-left: 13.89%;
-right: 55.56%;
-top: 509px;
-}
+  width: 320px;
+  height: 524px;
+  left: 201px;
+  top: 1540px;
 
-.p3{
-position: absolute;
-height: 33px;
-left: 14.03%;
-right: 55.56%;
-top: 709px;
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 30px 0px 0px 50px;
 }
-
-.p4{
+.box4{
   position: absolute;
-  left: 13.89%;
-  right: 55.56%;
-top: 809px;
-}
+  width: 320px;
+  height: 274px;
+  left: 561px;
+  top: 1540px;
 
-.p5{
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 30px 25px 0px 30px;
+}
+.box5{
+  text-align: justify;
+  text-justify: inter-word;
   position: absolute;
-height: 24px;
-left: 63.89%;
-right: 27.78%;
-top: 269px;
+  width: 320px;
+  height: 274px;
+  left: 360px;
+  top: 0px;
 
-font-family: Apercu Pro;
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 24px;
-color: #535353
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 30px 25px 0px 30px;
 }
-
-.p6 {
+.box6{
   position: absolute;
-height: 24px;
-left: 63.96%;
-right: 19.44%;
-top: 303px;
+  width: 680px;
+  height: 178px;
+  top: 346px;
 
-font-family: Apercu Pro;
-font-style: normal;
-font-weight: 300;
-font-size: 27px;
-line-height: 24px;
-
-letter-spacing: -0.27px;
-color: #535353
-}
-
-.p7{
-
-  height: 24px;
-  left: 0%;
-  right: 61.84%;
-  top: calc(50% - 24px/2 - 19.5px);
-}
-.p8{
- margin-top:15px;
-height: 24px;
-left: 0%;
-right: 1.84%;
-top: calc(50% - 24px/2 + 20.5px);
-font-style:normal;
-font-weight: lighter !important;
-font-size: 27px;
-line-height: 24px;
-}
-
-.p9{
-height: 49px;
-right: 82.03%;
-top: calc(50% - 49px/2 - 35.5px);
-}
-
-.p10{
-position: absolute;
-height: 73px;
-left: 69.57%;
-right: -0.29%;
-top: calc(50% - 73px/2 - 23.5px);
-}
-
-.p11{
-
-height: 49px;
-left: 0%;
-right: 58.26%;
-top: calc(50% - 49px/2 + 36.5px);
-}
-
-.p12{
-  position: absolute;
-height: 49px;
-left: 69.57%;
-right: -2.9%;
-top: calc(50% - 49px/2 + 36.5px);
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 30px 0px 0px 30px;
 }
