@@ -15,7 +15,7 @@ export const getFaq = () => async dispatch => {
   dispatch ({type: GET_FAQ_LOADING});
   try {
     let res = await axiosConfig.get (`faq`);
-    console.log (res);
+    // console.log (res);
 
     await dispatch ({type: GET_FAQ_SUCCESS, payload: res});
   } catch (error) {
