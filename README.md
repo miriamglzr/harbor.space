@@ -6,7 +6,8 @@
 
 ### Clone the repository to your computer.
 
-Before you run this app, please open the project directory inside the Terminal;
+Before you run this app, please open the project directory inside the Terminal.
+
 Make sure the packages are installled in yout local computer by running:
 
 -npm install
@@ -22,14 +23,18 @@ Clone this git repository into your device to run in localhost.
 ## Technologies
 
 This project is currently fullstack and was created using:
+
 -Languages: Javascript, HTML
+
 -Styling: CSS, Bootstrap
+
 -Framework: ReactJS
+
 -Webpack: React-router-dom, Redux, Redux-thunk, Axios
 
 Here's a quick Visual.
 
-<img src="./media/preview.png">
+<img src="./src/media/preview.png">
 <br/>
 
 Thank you!

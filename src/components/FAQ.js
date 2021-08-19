@@ -8,7 +8,7 @@ function FAQ (props) {
   const [optionArr, setOptionArr] = useState ([
     'Program conditions',
     'Admissions',
-    'Harbor.Space',
+    'Harbour.Space',
     'SCG',
     'Living in Barcelona',
   ]);
