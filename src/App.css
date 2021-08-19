@@ -496,6 +496,16 @@
 	top: 1838px;
 }
 
+.stickyBar {
+	position: fixed;
+
+	width: 100%;
+	min-width: 1024px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 0px;
+}
 .bottom {
-	min-height: 50px;
+	min-height: 120px;
 }
