@@ -29,7 +29,7 @@ This project is currently fullstack and was created using:
 
 Here's a quick Visual.
 
-<img src="./media/preview.png">
+<img src="./src/media/preview.png">
 <br/>
 
 Thank you!
