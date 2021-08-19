@@ -20,7 +20,7 @@ export default function About () {
         </div>
       </div>
       <div className="container">
-        <div className="col">
+        <div className="col about-p">
           <div className="box3">
             <p className="subtitle">Scholarship value</p>
             <p className="normal-text tuition">
