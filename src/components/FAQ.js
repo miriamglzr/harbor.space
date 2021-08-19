@@ -7,8 +7,10 @@ function FAQ (props) {
   const [option, setOption] = useState ('Program conditions');
   const [optionArr, setOptionArr] = useState ([
     'Program conditions',
-    'Option 2',
-    'Option 3',
+    'Admissions',
+    'Harbor.Space',
+    'SCG',
+    'Living in Barcelona',
   ]);
 
   const handleCollapse = (option, i) => {
@@ -16,7 +18,6 @@ function FAQ (props) {
     coll.style.display === 'block'
       ? (coll.style.display = 'none')
       : (coll.style.display = 'block');
-    console.log (optionArr);
   };
 
   const handleOptions = async () => {
@@ -79,9 +80,9 @@ function FAQ (props) {
                 <div key={i}>
                   <div className="row faq border-top">
                     <div className="col">
-                      <p className="subtitle">{e.category}</p>
+                      <p className="subtitle faq-text">{e.category}</p>
                     </div>
-                    <div className="col">
+                    <div className="col faq-text">
                       <p>{e.question}</p>
                     </div>
                     <div className="col">

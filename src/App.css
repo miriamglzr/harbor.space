@@ -13,6 +13,11 @@
 		url("//db.onlinewebfonts.com/t/74c3c29282b604a9eed88ac6ede61463.svg#Apercu Pro")
 			format("svg");
 }
+body {
+	min-width: 1000px; /* Suppose you want minimum width of 1000px */
+	width: auto !important; /* Firefox will set width as auto */
+	width: 1000px; /* As IE6 ignores !important it will set width as 1000px; */
+}
 
 .App {
 	text-align: center;
@@ -28,6 +33,7 @@
 	color: white !important;
 	font-size: 18px;
 }
+
 .harbor-space {
 	left: 5%;
 	right: 5%;
@@ -181,6 +187,38 @@
 	height: 394.07px;
 	left: 112px;
 	top: 2234px;
+	cursor: url("./media/drag-cursor.svg"), auto;
+}
+
+.testimony-name {
+	font-size: 16px;
+	font-weight: bold;
+	align-items: center !important;
+	align-content: center !important;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.testimony-program {
+	font-size: 14px;
+	margin-top: 0;
+}
+
+.testimony-text {
+	padding: 30px 85px 30px 85px;
+	align-content: center;
+	font-size: 26px;
+	font-weight: 300 !important;
+}
+.testimony-major {
+	padding-left: 85px;
+}
+
+.linkedin-icon {
+	align-self: end;
+	margin-top: 30px;
+	opacity: 1;
+	color: #9e9e9e;
 }
 
 .button-format {
@@ -313,11 +351,12 @@
 	height: 459.92px;
 	left: 272px;
 	top: 2343.08px;
-
+	padding: 40px;
 	background: #ffffff;
 	border: 1px solid #dadada;
 	box-sizing: border-box;
 	border-radius: 4px;
+	cursor: url("./media/drag-cursor.svg"), auto;
 }
 
 .collapsible {
@@ -334,13 +373,15 @@
 	padding: 0 18px;
 	display: none;
 	overflow: hidden;
-	font-size: 22px;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: 300;
 	line-height: 32px;
 	letter-spacing: -0.33000001311302185px;
 	text-align: justify;
 	text-justify: inter-word;
+	transition: opacity 2s linear;
+	padding-left: 130px;
 }
 
 /* Dropdown Button */
@@ -385,6 +426,7 @@
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 	border-radius: 2%;
+	transition: all 2s linear;
 }
 
 /* Links inside the dropdown */
@@ -437,4 +479,14 @@
 	align-items: center;
 	border-top-width: thin;
 	border-top-color: #c7c6cf;
+}
+.faq-text {
+	font-size: 20px !important;
+	font-weight: bold;
+}
+
+.avatar-img {
+	width: 78.62px;
+	height: 78.62px;
+	border-radius: 50%;
 }
