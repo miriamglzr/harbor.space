@@ -1,6 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import {connect} from 'react-redux';
+import {getFaq} from '../store/actions/faqActions';
 
-export default function FAQ () {
+function FAQ (props) {
+  let {getFaq, faq} = props;
   const [option, setOption] = useState ('Program conditions');
   const [show1, setShow1] = useState (false);
   const [show2, setShow2] = useState (false);
@@ -9,6 +12,8 @@ export default function FAQ () {
 
   const handleCollapse = (option, i) => {
     var coll = document.getElementById (option);
+    getFaq ();
+    console.log (faq);
     coll.style.display === 'block'
       ? (coll.style.display = 'none')
       : (coll.style.display = 'block');
@@ -22,6 +27,10 @@ export default function FAQ () {
       setShow4 (!show4);
     }
   };
+
+  useEffect (() => {
+    getFaq ();
+  }, []);
 
   return (
     <div className="container faq-p">
@@ -166,3 +175,10 @@ export default function FAQ () {
     </div>
   );
 }
+
+const mapStateToProps = state => ({
+  faq: state.faq.faq,
+  isLoading: state.faq.isLoading,
+});
+
+export default connect (mapStateToProps, {getFaq}) (FAQ);

@@ -8,8 +8,10 @@ import faq from '../database/faq.json';
 // ========================================================================================
 export const axiosConfig = {
   get: async function () {
-    const config = {headers: {'Content-type': 'application/json'}};
     console.log (faq);
-    return await axios.get (/*baseUrl +*/ faq, config);
+    //for api call for database
+    //const config = {headers: {'Content-type': 'application/json'}};
+    //return await axios.get (/*baseUrl +*/, config);
+    return await faq;
   },
 };
