@@ -4,8 +4,9 @@ import {getFaq} from '../store/actions/faqActions';
 
 function FAQ (props) {
   let {getFaq, faq} = props;
-  const [option, setOption] = useState ('Program conditions');
+  const [option, setOption] = useState ('All');
   const [optionArr, setOptionArr] = useState ([
+    'All',
     'Program conditions',
     'Admissions',
     'Harbour.Space',
@@ -75,7 +76,7 @@ function FAQ (props) {
       {faq &&
         <div className="col mb-4">
           {faq.map ((e, i) => {
-            if (e.category === option) {
+            if (e.category === option || option === 'All') {
               return (
                 <div key={i}>
                   <div className="row faq border-top">
