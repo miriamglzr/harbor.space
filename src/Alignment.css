@@ -1,0 +1,154 @@
+/* text alignment and position */
+.t1 {
+	position: absolute;
+	height: 96px;
+	left: 13.89%;
+	right: 55.56%;
+	top: 261px;
+	min-width: 440px;
+	width: 440px;
+}
+
+.t2 {
+	position: absolute;
+	height: 112px;
+	left: 52.78%;
+	right: 13.96%;
+	top: 1106px;
+	min-width: 479px;
+	width: 479px;
+}
+
+.faq-p {
+	position: absolute;
+	top: 2973px;
+	margin-bottom: 40px;
+}
+
+.about-p {
+	position: absolute;
+	top: 1540px;
+}
+
+.p1 {
+	position: absolute;
+	height: 64px;
+	left: 13.96%;
+	right: 55.49%;
+	top: 405px;
+	min-width: 440px;
+	width: 440px;
+}
+.p2 {
+	position: absolute;
+	height: 160px;
+	left: 13.89%;
+	right: 55.56%;
+	top: 509px;
+	min-width: 440px;
+	width: 440px;
+}
+
+.p3 {
+	position: absolute;
+	height: 33px;
+	left: 14.03%;
+	right: 55.56%;
+	top: 709px;
+}
+
+.p4 {
+	position: absolute;
+	left: 13.89%;
+	right: 55.56%;
+	top: 809px;
+}
+
+.p5 {
+	position: absolute;
+	height: 24px;
+	left: 63.89%;
+	right: 27.78%;
+	top: 269px;
+
+	font-family: Apercu Pro;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	color: #535353;
+}
+
+.p6 {
+	position: absolute;
+	height: 24px;
+	left: 63.96%;
+	right: 19.44%;
+	top: 303px;
+
+	font-family: Apercu Pro;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 27px;
+	line-height: 24px;
+
+	letter-spacing: -0.27px;
+	color: #535353;
+}
+
+.p7 {
+	height: 24px;
+	left: 0%;
+	right: 61.84%;
+	top: calc(50% - 24px / 2 - 19.5px);
+}
+.p8 {
+	margin-top: 15px;
+	height: 24px;
+	left: 0%;
+	right: 1.84%;
+	top: calc(50% - 24px / 2 + 20.5px);
+	font-style: normal;
+	font-weight: lighter !important;
+	font-size: 27px;
+	line-height: 24px;
+}
+
+.p9 {
+	height: 49px;
+	right: 82.03%;
+	top: calc(50% - 49px / 2 - 35.5px);
+}
+
+.p10 {
+	position: absolute;
+	height: 73px;
+	left: 69.57%;
+	right: -0.29%;
+	top: calc(50% - 73px / 2 - 23.5px);
+}
+
+.p11 {
+	height: 49px;
+	left: 0%;
+	right: 58.26%;
+	top: calc(50% - 49px / 2 + 36.5px);
+}
+
+.p12 {
+	position: absolute;
+	height: 49px;
+	left: 69.57%;
+	right: -2.9%;
+	top: calc(50% - 49px / 2 + 36.5px);
+}
+
+.p13 {
+	position: absolute;
+	height: 160px;
+	left: 52.78%;
+	right: 13.96%;
+	top: 1258px;
+	min-width: 479px;
+	width: 479px;
+}
