@@ -5,38 +5,38 @@ import {getFaq} from '../store/actions/faqActions';
 function FAQ (props) {
   let {getFaq, faq} = props;
   const [option, setOption] = useState ('Program conditions');
-  const [optionArr, setOptionArr] = useState ([]);
-  // const [show1, setShow1] = useState (false);
-  // const [show2, setShow2] = useState (false);
-  // const [show3, setShow3] = useState (false);
-  // const [show4, setShow4] = useState (false);
+  const [optionArr, setOptionArr] = useState ([
+    'Program conditions',
+    'Option 2',
+    'Option 3',
+  ]);
 
   const handleCollapse = (option, i) => {
     var coll = document.getElementById (option);
-    // getFaq ();
-    // console.log (faq);
     coll.style.display === 'block'
       ? (coll.style.display = 'none')
       : (coll.style.display = 'block');
+    console.log (optionArr);
+  };
 
-    console.log (coll.style.display);
-    // if (i === '0') {
-    //   setShow1 (!show1);
-    // } else if (i === '1') {
-    //   setShow2 (!show2);
-    // } else if (i === '2') {
-    //   setShow3 (!show3);
-    // } else {
-    //   setShow4 (!show4);
-    // }
+  const handleOptions = async () => {
+    await getFaq ();
+    let arr = [];
+    faq.forEach (e => {
+      if (!arr.includes (e.category)) {
+        arr.push (e.category);
+      }
+    });
+    //   setOptionArr (arr);
   };
 
   useEffect (() => {
-    getFaq ();
+    handleOptions ();
   }, []);
 
   return (
-    <div className="container faq-p">
+    faq.length &&
+    <div className="container faq-p ">
       <div className="row">
         <div className="col-4">
           <h1 className="title-font">
@@ -49,42 +49,32 @@ function FAQ (props) {
           </p>
         </div>
         <div className="col-3">
-          <div class="dropdown">
-            <button class="dropbtn">
+          <div className="dropdown">
+            <button className="dropbtn">
               <div className="row">
                 <div className="col-9">{option}</div>
                 <div className="col-1">
-                  <i class="fas fa-chevron-down icon" />
+                  <i className="fas fa-chevron-down icon" />
                 </div>
               </div>
             </button>
-            <div class="dropdown-content">
-              {/* {
-              faq.map (e => {
-                if (!optionArr.includes (e.category)){
-                setOptionArr({...optionArr, e.category})}
+            <div className="dropdown-content">
+              {optionArr &&
                 optionArr.map ((category, i) => {
                   return (
                     <a onClick={() => setOption (category)} key={i}>
                       {category}
                     </a>
                   );
-                })
-              })} */}
-              <a onClick={() => setOption ('Program conditions')}>
-                Program conditions
-              </a>
-              <a onClick={() => setOption ('Option 2')}>Option 2</a>
-              <a onClick={() => setOption ('Option 3')}>Option 3</a>
+                })}
             </div>
           </div>
         </div>
       </div>
       {faq &&
-        <div className="col ">
+        <div className="col mb-4">
           {faq.map ((e, i) => {
-            let show = false;
-            if (e.option === 'pc') {
+            if (e.category === option) {
               return (
                 <div key={i}>
                   <div className="row faq border-top">
@@ -103,8 +93,8 @@ function FAQ (props) {
                         {document.getElementById (`key${i}`) &&
                           document.getElementById (`key${i}`).style.display ===
                             'none'
-                          ? <i class="fas fa-minus-circle" />
-                          : <i class="fas fa-plus-circle" />}
+                          ? <i className="fas fa-minus-circle" />
+                          : <i className="fas fa-plus-circle" />}
                       </button>
                     </div>
                   </div>
