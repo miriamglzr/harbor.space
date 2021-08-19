@@ -5,6 +5,8 @@
 	left: 13.89%;
 	right: 55.56%;
 	top: 261px;
+	min-width: 440px;
+	width: 440px;
 }
 
 .t2 {
@@ -13,6 +15,8 @@
 	left: 52.78%;
 	right: 13.96%;
 	top: 1106px;
+	min-width: 479px;
+	width: 479px;
 }
 
 .faq-p {
@@ -32,6 +36,8 @@
 	left: 13.96%;
 	right: 55.49%;
 	top: 405px;
+	min-width: 440px;
+	width: 440px;
 }
 .p2 {
 	position: absolute;
@@ -39,6 +45,8 @@
 	left: 13.89%;
 	right: 55.56%;
 	top: 509px;
+	min-width: 440px;
+	width: 440px;
 }
 
 .p3 {
@@ -141,4 +149,6 @@
 	left: 52.78%;
 	right: 13.96%;
 	top: 1258px;
+	min-width: 479px;
+	width: 479px;
 }

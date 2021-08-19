@@ -13,12 +13,6 @@
 		url("//db.onlinewebfonts.com/t/74c3c29282b604a9eed88ac6ede61463.svg#Apercu Pro")
 			format("svg");
 }
-body {
-	min-width: 1000px; /* Suppose you want minimum width of 1000px */
-	width: auto !important; /* Firefox will set width as auto */
-	width: 1000px; /* As IE6 ignores !important it will set width as 1000px; */
-}
-
 .App {
 	text-align: center;
 	font-family: Apercu Pro;
@@ -251,6 +245,7 @@ body {
 
 .tuition {
 	margin-top: 30px;
+	margin-bottom: 150px;
 	font-family: Apercu Pro;
 	font-style: normal;
 	font-weight: 300;
@@ -295,7 +290,7 @@ body {
 .box3 {
 	width: 320px;
 	height: 524px;
-	left: 201px;
+	left: 10%;
 	top: 1540px;
 
 	background: #ffffff;
@@ -308,7 +303,7 @@ body {
 	position: absolute;
 	width: 320px;
 	height: 274px;
-	left: 561px;
+	left: 35%;
 	top: 1540px;
 
 	background: #ffffff;
@@ -323,8 +318,8 @@ body {
 	position: absolute;
 	width: 320px;
 	height: 274px;
-	left: 360px;
-	top: 0px;
+	top: 1540px;
+	left: 60%;
 
 	background: #ffffff;
 	border: 1px solid #dadada;
@@ -336,7 +331,8 @@ body {
 	position: absolute;
 	width: 680px;
 	height: 178px;
-	top: 346px;
+	left: 35%;
+	top: 1886px;
 
 	background: #ffffff;
 	border: 1px solid #dadada;
@@ -348,8 +344,9 @@ body {
 .box7 {
 	position: absolute;
 	width: 800px;
+	min-width: 800px;
 	height: 459.92px;
-	left: 272px;
+	left: 25%;
 	top: 2343.08px;
 	padding: 40px;
 	background: #ffffff;
@@ -489,4 +486,16 @@ body {
 	width: 78.62px;
 	height: 78.62px;
 	border-radius: 50%;
+}
+
+.graduation {
+	position: absolute;
+	width: 676px;
+	height: 24px;
+	left: 35%;
+	top: 1838px;
+}
+
+.bottom {
+	min-height: 50px;
 }

@@ -110,6 +110,7 @@ function FAQ (props) {
           })}
 
         </div>}
+      <div className="bottom" />
     </div>
   );
 }

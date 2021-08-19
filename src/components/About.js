@@ -1,6 +1,7 @@
 import React from 'react';
 import student from '../media/student.svg';
 import circleQuad from '../media/circle-quad.svg';
+import graduation from '../media/graduation.svg';
 
 export default function About () {
   return (
@@ -19,10 +20,10 @@ export default function About () {
           </p>
         </div>
       </div>
-      <div className="container">
-        <div className="col about-p">
+      <div className="container w-80">
+        <div className="col-4 about-p">
           <div className="box3">
-            <p className="subtitle">Scholarship value</p>
+            <p className="subtitle mb-1">Scholarship value</p>
             <p className="normal-text tuition">
               €31,300
             </p>
@@ -37,32 +38,35 @@ export default function About () {
             </p>
           </div>
         </div>
-        <div className="col">
+        <div className="col-4">
           <div className="box4">
             <p className="normal-text">
-              <p className="subtitle">Study commitment</p>3 hours / day
+              <p className="subtitle mb-1">Study commitment</p>3 hours / day
             </p>
             <p>
               You will complete 15 modules to graduate. Daily classes are 3 hours, plus coursework to complete in your own time.
             </p>
-            <div className="box5">
-              <p className="normal-text">
-                <p className="subtitle">Work commitment</p>4 hours / day
-              </p>
-              <p>
-                Immerse yourself in the professional world during your apprenticeship. You’ll learn the ropes from the best and get to apply your newly acquired knowledge in the field from day one.
-              </p>
-            </div>
-            <div className="box6">
-              <p>
-                <p className="subtitle">A full-time contract</p>
-                1 Year / Full-Time
-              </p>
-              <p>
-                You’ll be guaranteed a 1 year contract with SCG upon graduation.
-              </p>
-            </div>
           </div>
+        </div>
+        <div className="col-4">
+          <div className="box5">
+            <p className="normal-text">
+              <p className="subtitle mb-1">Work commitment</p>4 hours / day
+            </p>
+            <p>
+              Immerse yourself in the professional world during your apprenticeship. You’ll learn the ropes from the best and get to apply your newly acquired knowledge in the field from day one.
+            </p>
+          </div>
+        </div>
+        <img className="graduation" src={graduation} alt="graduation" />
+        <div className="box6">
+          <p>
+            <p className="subtitle mb-1">A full-time contract</p>
+            1 Year / Full-Time
+          </p>
+          <p>
+            You’ll be guaranteed a 1 year contract with SCG upon graduation.
+          </p>
         </div>
       </div>
     </div>
